@@ -1,0 +1,124 @@
+@charset " UFT-8";
+/* Main CSS Doc */
+
+
+/* CSS GUIDE
+
+    1. General Styles
+    2. 
+
+*/
+
+/* 1. --- General Styles --- */
+
+/* Normalizing base CSS */
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+img, embed, object, video, picture {
+    max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+
+input, textarea {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+}
+
+section  h2, section h3, section p {
+    padding-left: 15px;
+}
+
+.spacer {
+    margin-top: 40px;
+}
+
+.txt-spacer {
+    margin-top: 30px;
+}
+
+.desktop-up {
+    display: none;
+}
+
+/* 1. --- END General Styles --- */
+
+/* 2. --- Mobile Grid --- */
+
+@media screen and (min-width: 1px) {
+    body {
+        background-color: rgb(249, 150, 249);
+    }
+
+    h2 {
+        color: white;
+        font-size: 5vw;
+    }
+
+}
+
+/* 2. --- End Mobile Grid --- */
+
+/* 3. --- Tablet Grid --- */
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: rgb(106, 224, 106);
+    }
+
+    h2 {
+        color: rgb(211, 208, 23);
+        font-size: 5vw;
+    }
+}
+
+/* 3. --- End Tablet Grid --- */
+
+
+/* 4. --- Desktop Grid --- */
+
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: rgb(241, 101, 101);
+    }
+    
+    h2 {
+        color: black;
+        font-size: 5vw;
+    }
+
+    .desktop-up {
+        display: block;
+    }
+}
+
+/* 4. --- End Desktop Grid --- */
+
+/* 5. --- XL Grid --- */
+
+@media screen and (min-width: 1920px) {
+       body {
+        background-color: rgb(101, 101, 234);
+    }
+
+    h2 {
+        color: rgb(48, 173, 41);
+        font-size: 5vw;
+    }
+    
+}
+
+/* 5. --- End XL Grid --- */
